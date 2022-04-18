@@ -8,11 +8,12 @@ import { AppRoutingModule } from './app-routing.module';
 // import { AppComponent } from './app.component';
 import { AppComponent } from './app.component';
 import { CubeComponent } from './cube/cube.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 // import { NgtCoreModule } from '@angular-three/core/lib/canvas';
 
 @NgModule({
   declarations: [
-    AppComponent,CubeComponent
+    AppComponent,CubeComponent, PortfolioComponent
   ],
   imports: [
     NgtCoreModule,
