@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { NgtVector3 } from '@angular-three/core';
+import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-portfolio',

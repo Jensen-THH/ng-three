@@ -1,0 +1,9 @@
+<ngt-mesh (animateReady)="onAnimate($event.object)" [position]="position">
+    <ngt-torus-geometry [args]="[10, 0.4, 12, 32]"></ngt-torus-geometry>
+    <ngt-mesh-standard-material [parameters]="{color:'#2ecc71'}"></ngt-mesh-standard-material>
+    <!-- <ngt-box-geometry></ngt-box-geometry> -->
+    <!-- light -->
+    <!-- <ngt-ring-geometry [args]="[1, 2, 100]"></ngt-ring-geometry> -->
+</ngt-mesh>
+<ngt-point-light [position]="[5,5,5]"></ngt-point-light>
+<ngt-ambient-light color="#ffffff"></ngt-ambient-light>
