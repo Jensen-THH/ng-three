@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { NgtVector3 } from '@angular-three/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ng-three';
+ 
 }
+
