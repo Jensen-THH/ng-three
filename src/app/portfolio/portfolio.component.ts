@@ -14,8 +14,8 @@ export class PortfolioComponent implements OnInit {
   len = this.words.length
   forwards = true
   skip_count = 0
-  skip_delay = 15
-  speed = 70
+  skip_delay = 25
+  speed = 100
   constructor() { }
 a = () => {
   setInterval( () => {
@@ -50,7 +50,6 @@ a = () => {
   },this.speed);
 }
 ngOnInit(): void {
-
       this.a()
 }
 

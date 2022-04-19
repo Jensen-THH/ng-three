@@ -1,9 +1,24 @@
-<ngt-mesh (animateReady)="onAnimate($event.object)" [position]="position">
+    <ngt-mesh (animateReady)="onTorusAnimateReady($event.object)"> >
+        <!-- <ngt-mesh (animateReady)="onAnimate($event.object)" [position]="position"> -->
     <ngt-torus-geometry [args]="[10, 0.4, 12, 32]"></ngt-torus-geometry>
-    <ngt-mesh-standard-material [parameters]="{color:'#2ecc71'}"></ngt-mesh-standard-material>
+    <ngt-mesh-standard-material [parameters]="{color:'#4b4b4b'}"></ngt-mesh-standard-material>
     <!-- <ngt-box-geometry></ngt-box-geometry> -->
     <!-- light -->
-    <!-- <ngt-ring-geometry [args]="[1, 2, 100]"></ngt-ring-geometry> -->
+    <!-- <ngt-ring-geometry [args]="[1, 3, 10]"></ngt-ring-geometry> -->
 </ngt-mesh>
+<ngt-mesh (animateReady)="onAnimate($event.object)" *ngFor="let starPosition of starPositions" [position]="starPosition"  >
+    <ngt-sphere-geometry  ngId="star" [args]="[0.25, 24, 24]"></ngt-sphere-geometry>
+    <ngt-mesh-standard-material ngId="starMaterial" [parameters]="{color:'#ffffff'}"></ngt-mesh-standard-material>
+</ngt-mesh>
+
+<ng-container *ngIf="avatarTexture$ | async as avatarTexture" >
+    <ngt-mesh (ready)="jensen= $event" [position]="[0,0,-5]" (animateReady)="onAnimate($event.object)">
+        <ngt-box-geometry [args]="[3,3,3]">
+            
+        </ngt-box-geometry>
+        <ngt-mesh-basic-material [parameters]="{map: avatarTexture}"></ngt-mesh-basic-material>
+    </ngt-mesh>
+</ng-container>
+
 <ngt-point-light [position]="[5,5,5]"></ngt-point-light>
 <ngt-ambient-light color="#ffffff"></ngt-ambient-light>

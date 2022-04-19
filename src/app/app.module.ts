@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgtMeshModule } from '@angular-three/core/meshes';
 import { NgtMeshBasicMaterialModule, NgtMeshStandardMaterialModule } from '@angular-three/core/materials';
-import { NgtBoxGeometryModule, NgtRingGeometryModule, NgtTorusGeometry, NgtTorusGeometryModule } from '@angular-three/core/geometries';
+import { NgtBoxGeometryModule, NgtCircleGeometryModule, NgtRingGeometryModule,NgtSphereGeometryModule,NgtTorusGeometryModule } from '@angular-three/core/geometries';
 import { AppRoutingModule } from './app-routing.module';
 // import { AppComponent } from './app.component';
 import { AppComponent } from './app.component';
@@ -25,10 +25,12 @@ import { SceneComponent } from './scene/scene.component';
     NgtMeshBasicMaterialModule,
     NgtBoxGeometryModule,
     NgtTorusGeometryModule,
+    NgtSphereGeometryModule,
     NgtMeshStandardMaterialModule,
     NgtPointLightModule,
     NgtAmbientLightModule,
-    NgtRingGeometryModule
+    NgtRingGeometryModule,
+    NgtCircleGeometryModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
