@@ -1,11 +1,9 @@
 <main>
 
     <header>
-      <div  class="bg-word">
-
-        <h1 class="word animate-charcter">{{part}}</h1>
+      <div class="bg-word">
+        <h1 class="word animate-charcter" appTypewriter [words]="words" [speed]="speed" [skipDelay]="skip_delay"></h1>
       </div>
-    
       <!-- <h1 class="animate-charcter ">Jensen</h1> -->
       <div class="welcome">
         <div class="waviy">
@@ -45,16 +43,17 @@
     <section>
       <h2>🎓 What did I learn? 🧠</h2>
       <p>
-        Javascript, Python, MySQL, Mongo DB
+        Angular, Typescript
       </p>
 
       <p>
-        HTML5, CSS, Bootstrap, TailwindCSS
+        HTML, CSS, Bootstrap, TailwindCSS, Devextreme
       </p>
 
       <p>
-        Angular, Vue Native, Node.js,
+        Node.js, Python, Vue Native
       </p>
+      <p>MySQL, Mongo DB</p>
       <p>
         Git, Firebase
       </p>
@@ -67,6 +66,8 @@
       
       <p>Thành thạo phát triển giao diện phần mềm y tế tại SUNS Software, bao gồm SUNS HIS và SUNS Clinic, tối ưu trải nghiệm người dùng với công nghệ web hiện đại, tích hợp hệ sinh thái y tế thông minh.
       </p>
+      <p>LandingPage Dolphin<a target="_blank" href="https://dolphinjs.netlify.app/">view</a></p>
+      <p>LandingPage Suns<a target="_blank" href="https://demojsthh.netlify.app/">view</a></p>
       <p>
         Jshop: Website shopping using Angular 12, Nodejs and MongoDB <a href="https://thh-jshop.netlify.app/#/" target="_blank">view</a>
       </p>
@@ -88,7 +89,7 @@
     <section class="left">
       <h2>🌮 Work History</h2>
       
-      <h3>SUNS Software JSC - Front-end Developer</h3>
+      <h3>SUNS Software JSC - Front-end Developer <span style="float:right">7/2021 – 12/2023</span></h3>
       <p>
         Phát triển giao diện web responsive từ thiết kế Figma/Adobe sang HTML, CSS, JavaScript, đảm bảo pixel-perfect, sử dụng Angular 11/12/14 để tối ưu UI động. Tích hợp API .NET, xử lý lỗi, bảo trì hệ thống, áp dụng DevExtreme, jQuery, Tailwind CSS. Phối hợp với nhóm thiết kế và backend, hỗ trợ UX/UI, kiểm thử và fix bug hiệu quả.
       </p>

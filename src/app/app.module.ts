@@ -11,11 +11,12 @@ import { AppComponent } from './app.component';
 import { CubeComponent } from './cube/cube.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SceneComponent } from './scene/scene.component';
+import { TypewriterDirective } from './portfolio/typewriter.directive';
 // import { NgtCoreModule } from '@angular-three/core/lib/canvas';
 
 @NgModule({
   declarations: [
-    AppComponent,CubeComponent, PortfolioComponent, SceneComponent
+    AppComponent,CubeComponent, PortfolioComponent, SceneComponent, TypewriterDirective
   ],
   imports: [
     NgtCoreModule,
